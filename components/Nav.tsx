@@ -211,7 +211,7 @@ export function Nav() {
                 <div className={classes.collapse}>
                 <Collapse
                     in={opened}
-                    className={classes.collapseItems}
+                   
                     transitionDuration={300}
                     transitionTimingFunction="linear"
                 >
