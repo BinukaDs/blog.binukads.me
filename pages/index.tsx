@@ -1,12 +1,12 @@
-import Image from 'next/image'
+
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
 import Head from 'next/head'
-import { Text, Title, Center, createStyles } from '@mantine/core';
+import { Title, createStyles } from '@mantine/core';
 import styles from "../styles/Home.module.css"
-import Featured from '../components/Featured'
+
 
 const useStyles = createStyles((theme) => ({
 
