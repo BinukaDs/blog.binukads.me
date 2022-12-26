@@ -3,7 +3,7 @@ import Navbar from "./Nav";
 import Head from "next/head";
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
     return (
         <div>
     
