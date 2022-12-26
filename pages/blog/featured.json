@@ -1,0 +1,15 @@
+{
+    "data": [
+
+        {
+            "name": "functions-for-beginners",
+            "id": "1"
+            
+        },
+
+        {
+            "name": "solidjs-for-beginners",
+            "id" : "2"
+        }
+    ]
+}
