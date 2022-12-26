@@ -44,6 +44,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 700,
     textDecoration: 'none',
     fontSize: theme.fontSizes.sm,
+    lineheight: 1,
 
     '&:hover': {
      
@@ -81,10 +82,9 @@ const links = [
 export function Footer() {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Link<'a'>
+    <Link
       key={link.label}
       href={link.link}
-      sx={{ lineHeight: 1 }}
       className={classes.links}
       passHref
       scroll={false}
