@@ -1,6 +1,5 @@
 import { createStyles, Anchor, Group, ActionIcon, ThemeIcon, Title, Text } from '@mantine/core';
 import { IconBrandTwitter, IconBrandGithub } from '@tabler/icons';
-import { MantineLogo } from '@mantine/ds';
 import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({

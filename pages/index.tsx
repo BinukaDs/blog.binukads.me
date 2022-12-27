@@ -115,7 +115,7 @@ export default function Home({ posts }: any) {
         <div className={classes.Container}>
           <div className={classes.Middle}>
             <div  className={classes.Card}>
-              <Link href={'/blog/' + post.slug} passHref key={post.slug} className={classes.blogTitle} scroll={false}>
+              <Link href={'/blog/' + post.slug} passHref key={post.slug} className={classes.blogTitle} >
               <Title
                 
                 order={2}

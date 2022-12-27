@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core'
 import Layout from '../components/Layout'
 import { useHotkeys, useLocalStorage } from '@mantine/hooks'
-import { AnimatePresence, motion } from 'framer-motion'
+
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   
@@ -22,18 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   useHotkeys([['mod+J', () => toggleColorScheme()]]);
 
-  const variants = {
-    hidden: { opacity: 0, x: 0, y: 200 },
-    enter: { opacity: 1, x: 0, y: 0 },
-    exit: { opacity: 0, x: 0, y: -100 },
-  }
   
-
-  const config = {
-    type: "spring",
-    damping: 20,
-    stiffness: 100
-  };
 
   
 
@@ -47,8 +36,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       withGlobalStyles
       withNormalizeCSS
       theme={{
-
-        loader: 'bars',
 
         headings: {
           fontFamily: 'Inconsolata',
