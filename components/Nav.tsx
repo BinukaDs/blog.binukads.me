@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { createStyles, Header, Group, ActionIcon, Container, Burger, Collapse, Title, ThemeIcon, Image, useMantineColorScheme } from '@mantine/core';
+import { createStyles, Header, Group, ActionIcon, Container, Burger, Collapse, Title, ThemeIcon, Image, useMantineColorScheme, Autocomplete } from '@mantine/core';
 import { IconBrandTwitter, IconBrandGithub, IconSun, IconMoonStars } from '@tabler/icons';
 import Link from 'next/link';
 import { useToggle } from '@mantine/hooks';
@@ -122,6 +122,17 @@ const useStyles = createStyles((theme) => ({
 
     mobileSocial: {
        marginLeft: 2
+    },
+
+    brand: {
+        width: "40%",
+        height: "auto",
+        backgroundSize: "cover",
+        background: "transparent no- repeat center",
+
+        [theme.fn.smallerThan('sm')]: {
+            width: "80%",
+        },
     }
 }));
 
@@ -179,11 +190,13 @@ export function Nav() {
 
                 
 
-                <Title
+                {/* <Title
                     order={2}
                     fw={700}
                     color="blue.5"
-                    className={classes.Title}>blog.binukads.me ❄️</Title>
+                    className={classes.Title}>blog.binukads.me ❄️</Title> */}
+                
+                <Image src="logo.png" className={classes.brand} width="16" height="16" alt="logo"></Image>
 
                 <Group spacing={0} className={classes.social} position="right" noWrap>
                     <a href="https://twitter.com/Binuka_Ds" >
