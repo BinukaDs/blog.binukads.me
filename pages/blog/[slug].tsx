@@ -124,6 +124,8 @@ const PostPage = ({ frontMatter: { title, date, author, thumbnail }, mdxSource }
 
         <div className={classes.Container}>
             <Head>
+                <link rel="icon" href="../../public/favicon.ico" />
+                <link rel="apple-touch-icon" href="../../public/favicon.ico" />
                 <title>{title} | blog.binukads.me</title>
             </Head>
             <div className="mt-4">
