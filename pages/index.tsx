@@ -14,7 +14,7 @@ const useStyles = createStyles((theme) => ({
     textDecoration: "none",
     fontWeight: "bold",
     marginTop: "20",
-    color: theme.colorScheme === 'dark' ? theme.colors.red[2]: theme.colors.red[8],
+    color: theme.colorScheme === 'dark' ? theme.colors.gray[1] : theme.colors.gray[9],
     '&:hover': {
       textDecoration: "underline",
       textDecorationColor: theme.colorScheme === 'dark' ? theme.colors.red[2] : theme.colors.red[8]
@@ -43,6 +43,7 @@ const useStyles = createStyles((theme) => ({
   Container: {
     marginLeft: "auto",
     marginRight: "auto",
+    color: theme.colorScheme === 'dark' ? theme.colors.gray[1] : theme.colors.gray[9],
     
     width: "50%",
 

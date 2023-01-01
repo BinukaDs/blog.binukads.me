@@ -24,7 +24,7 @@ const useStyles = createStyles((theme) => ({
     Container: {
         marginLeft: "auto",
         marginRight: "auto",
-
+        color: theme.colorScheme === 'dark' ? theme.colors.gray[1] : theme.colors.gray[9],
         width: "50%",
 
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {

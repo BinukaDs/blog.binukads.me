@@ -8,12 +8,13 @@ import { Prism } from '@mantine/prism';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Button from '../../components/Button'
 import { title } from 'process'
-import { createStyles, Title, Code } from '@mantine/core'
+import { createStyles, Title, Code, Text } from '@mantine/core'
 import Image from 'next/image'
 import image from '../../components/postComponents/image'
 import topic from '../../components/postComponents/topic'
 import note from '../../components/postComponents/note'
 import kbd from '../../components/postComponents/kbd'
+import { Binukads } from '../../components/profiles/Binuka_Dasunpriya'
 import Head from 'next/head'
 
 
@@ -77,13 +78,12 @@ const useStyles = createStyles((theme) => ({
         marginTop: "20px",
         marginBottom: "20px",
         backgroundSize: "cover",
-        background: "transparent no- repeat center"
-
-
-
-
-
+        background: "transparent no-repeat center"
     },
+
+    mdx: {
+        color: theme.colorScheme === 'dark' ? theme.colors.gray[1] : theme.colors.gray[9],
+    }
 }));
 
 
@@ -135,12 +135,13 @@ const PostPage = ({ frontMatter: { title, date, author, thumbnail }, mdxSource }
                     fw={700}>
                     {title}</Title>
                 <Image className={classes.thumbnail} width="1920" height="1080" src={thumbnail} alt="thumbnail"></Image>
-                <small className={classes.date}>Posted On {date}</small><br />
-                <small className={classes.date}>Written By {author}</small>
+
+                <Binukads image={'../../profile.jpg'} name={'Binuka Dasunpriya'} email={'binukadasunpriya@gmail.com'} date={date}></Binukads>
 
 
                 <div className={classes.Middle}>
-                    <MDXRemote {...mdxSource} components={{ Button, Prism, image, topic, Code, note, kbd}} className={classes.inner} />
+                    <Text className={classes.mdx}>
+                        <MDXRemote {...mdxSource} components={{ Button, Prism, image, topic, Code, note, kbd }} className={classes.inner} /></Text>
                 </div>
             </div>
         </div>
@@ -148,4 +149,3 @@ const PostPage = ({ frontMatter: { title, date, author, thumbnail }, mdxSource }
 }
 
 export default PostPage;
-
