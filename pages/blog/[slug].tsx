@@ -136,7 +136,7 @@ const PostPage = ({ frontMatter: { title, date, author, thumbnail }, mdxSource }
                     {title}</Title>
                 <Image className={classes.thumbnail} width="1920" height="1080" src={thumbnail} alt="thumbnail"></Image>
 
-                <Binukads image={'../../profile.jpg'} name={'Binuka Dasunpriya'} email={'binukadasunpriya@gmail.com'} date={date}></Binukads>
+                <Binukads image={'../../avatar.webp'} name={'Binuka Dasunpriya'} email={'binukadasunpriya@gmail.com'} date={date}></Binukads>
 
 
                 <div className={classes.Middle}>

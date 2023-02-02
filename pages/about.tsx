@@ -2,7 +2,7 @@ import { Text, Title, Center, createStyles, Grid, ThemeIcon } from '@mantine/cor
 import { TwitterButton, LinkedinButton, GithubButton, WebsiteButton } from '../components/ContactButtons';
 import Image from 'next/image';
 import Head from 'next/head';
-import profile from '../public/profile.webp'
+import profile from '../public/avatar.webp'
 
 const useStyles = createStyles((theme) => ({
 
@@ -67,7 +67,7 @@ const About = () => {
                     <Image
                         className={classes.Image}
                         src={profile}
-                        width={120}
+                        width={110}
                         height={110}
                         alt="profile" />
 
