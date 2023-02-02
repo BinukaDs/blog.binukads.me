@@ -34,7 +34,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface UserButtonProps extends UnstyledButtonProps {
-    image: '../../profile.jpg';
+    image: '../../avatar.jpg';
     name: 'Binuka Dasunpriya';
     email: 'binukadasunpriya@gmail.com';
     date: string;

@@ -2,7 +2,7 @@ import { Text, Title, Center, createStyles, Grid, ThemeIcon } from '@mantine/cor
 import { TwitterButton, LinkedinButton, GithubButton, WebsiteButton } from '../components/ContactButtons';
 import Image from 'next/image';
 import Head from 'next/head';
-import profile from '../public/avatar.webp'
+import profile from '../public/avatar.jpg'
 
 const useStyles = createStyles((theme) => ({
 
